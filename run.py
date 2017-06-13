@@ -3,6 +3,7 @@ from app.api import summaryapi
 app = Flask(__name__)
 app.register_blueprint(summaryapi.summary_api)
 
+app.config["JSON_SORT_KEYS"] = False
 
 @app.route("/")
 def index():
