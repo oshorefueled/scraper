@@ -1,2 +1,2 @@
 BASE_URL = "http://www.censusdata.abs.gov.au"
-WARRNAMBOOL = "SSC21434"
+WARRNAMBOOL = "GL_NSW2581"

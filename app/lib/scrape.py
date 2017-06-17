@@ -2,7 +2,7 @@ import requests as request
 from bs4 import BeautifulSoup, SoupStrainer
 
 
-class Scrape:
+class Scrape(object):
     def __init__(self, search_code):
         self.search_code = search_code
         self.url = Scrape.build_url(self)
@@ -23,6 +23,11 @@ class Scrape:
     @staticmethod
     def strain_by_id(element_id):
         soup_strainer = SoupStrainer(id=element_id)
+        return soup_strainer
+
+    @staticmethod
+    def strain_by_class(element_class):
+        soup_strainer = SoupStrainer(class_=element_class)
         return soup_strainer
 
     def build_url(self):

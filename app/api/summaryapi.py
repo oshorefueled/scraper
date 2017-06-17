@@ -7,6 +7,7 @@ from constants import constants
 summary_api = Blueprint('summary_api', __name__)
 
 
+
 @summary_api.route('/v1/summary')
 def summary():
     summari = Summary(constants.WARRNAMBOOL)

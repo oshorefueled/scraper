@@ -74,23 +74,3 @@ class Summary(Scrape):
             value = i.find(class_="summaryData").string
             data_list.append({"title": title, "value": value})
         return data_list
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
